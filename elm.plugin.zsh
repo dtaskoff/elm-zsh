@@ -34,6 +34,7 @@ _elm() {
           ;;
         make)
           _arguments $help \
+            ': :_files' \
             '(--debug)--debug[turn on the time-travelling debugger]' \
             '(--optimize)--optimize[turn on optimizations to make code smaller and faster]' \
             '(--output)--output[specify the name of the resulting JS file]: :_files' \
